@@ -7,7 +7,7 @@ export class App extends Component {
     super(props);
 
     this.state = {
-      userName: "Aditya's",
+      userName: "Aditya",
       todoItems: [
         { action: "Buy Milk", done: true },
         { action: "Dentist at 5pm", done: false },
@@ -47,13 +47,13 @@ export class App extends Component {
       <div className="container">
         <div className="row">
           <Navbar name={this.state.userName}/>
-          <div className="col-12">
+          <div className="col-12" >
             <input
               className="form-control"
               value={this.state.newToDo}
               onChange={this.updateValue}
             />
-            <button className="btn btn-primary" onClick={this.newTodo}>
+            <button className="btn btn-primary"  onClick={this.newTodo}>
               Add
             </button>
             <table className="table">
