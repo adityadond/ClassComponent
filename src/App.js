@@ -7,7 +7,7 @@ export class App extends Component {
     super(props);
 
     this.state = {
-      userName: "Zander",
+      userName: "Aditya's",
       todoItems: [
         { action: "Buy Milk", done: true },
         { action: "Dentist at 5pm", done: false },
@@ -41,13 +41,12 @@ export class App extends Component {
       ),
     });
 
-  
 
   render() {
     return (
       <div className="container">
         <div className="row">
-      <Navbar name={this.state.userName}/>
+          <Navbar name={this.state.userName}/>
           <div className="col-12">
             <input
               className="form-control"
@@ -64,7 +63,6 @@ export class App extends Component {
                   <th>Complete</th>
                 </tr>
               </thead>
-
               <tbody>{this.todoRows()}</tbody>
             </table>
           </div>
