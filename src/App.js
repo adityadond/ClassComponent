@@ -9,8 +9,8 @@ export class App extends Component {
     this.state = {
       userName: "Aditya",
       todoItems: [
-        { action: "Buy Milk", done: true },
-        { action: "Dentist at 5pm", done: false },
+         { action: "Buy Milk", done: true },
+         { action: "Dentist at 5pm", done: false },
         { action: "Go to Gym", done: false },
       ],
       newTodo: "",
@@ -52,6 +52,7 @@ export class App extends Component {
               className="form-control"
               value={this.state.newToDo}
               onChange={this.updateValue}
+              placeholder="Enter Todo item"
             />
             <button className="btn btn-primary"  onClick={this.newTodo}>
               Add
